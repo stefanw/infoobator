@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+    <head profile="http://www.w3.org/2006/03/hcard"> 
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+        <!-- <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen"/>  -->
+        <!--[if IE]><style type="text/css">
+          .clearfix {zoom: 1; display: block;}
+        </style><![endif]--> 
+        <title>Open Foo</title> 
+        <meta name="robots" content="index, follow" /> 
+        <meta name="keywords" content="Open Foo" /> 
+        <meta name="description" content="Your Open Foo Name" /> 
+    </head> 
+    <body> 
+      <header> 
+          <h1>Your Open Foo Name is</h1> 
+          <h2 id="yourname"></h2>
+      </header>
+      <script type="text/javascript" charset="utf-8">
+        (function(){
+          var words = [
+            ["Open", "Free", "Libre", "Universal"],
+            ["Content", "Knowledge", "Web", "P2P", "Freedom", "Learning", "Resource", "Salad"],
+            ["Foundation", "Studio", "University", "Space", "Camp"]
+          ];
+          var yourname = document.getElementById("yourname");
+          var name = [];
+          for(var i=0;i<words.length;i+=1){
+            name.push(words[i][Math.floor(Math.random() * words[i].length)]);
+          }
+          yourname.innerHTML = name.join(" ");
+        }());
+      </script>
+    </body> 
+</html>
