@@ -2,26 +2,49 @@
 <html> 
     <head profile="http://www.w3.org/2006/03/hcard"> 
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
-        <!-- <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen"/>  -->
+        <style type="text/css" media="screen">
+          body{
+            padding:0;
+            margin:50px auto;
+            text-align:center;
+            font:100% Verdana;
+          }
+          h1 {
+            font-size: 1.5em;
+          }
+          h2 {
+            font-size: 2em;
+             margin-top:0;
+          }
+          #yourname {
+            font-size: 4em;
+          }
+          footer {
+            font-size: 0.75em;
+          }
+        </style>
         <!--[if IE]><style type="text/css">
           .clearfix {zoom: 1; display: block;}
         </style><![endif]--> 
-        <title>Open Foo</title> 
+        <title>Infoobator - Generate your Open Web Foo Name</title> 
         <meta name="robots" content="index, follow" /> 
         <meta name="keywords" content="Open Foo" /> 
         <meta name="description" content="Your Open Foo Name" /> 
     </head> 
     <body> 
-      <header> 
-          <h1>Your Open Foo Name is</h1> 
-          <h2 id="yourname"></h2>
-      </header>
+      <h1>The Infoobator</h1> 
+      <h2>Your New Open Foo Name is:</h2>
+      <p id="yourname"></p>
+      <footer>
+        <p>Brought to you by the <a href="http://opendatalabs.org">Open Data Labs</a></p>
+      </footer>
       <script type="text/javascript" charset="utf-8">
         (function(){
           var words = [
-            ["Open", "Free", "Libre", "Universal"],
-            ["Content", "Knowledge", "Web", "P2P", "Freedom", "Learning", "Resource", "Salad"],
-            ["Foundation", "Studio", "University", "Space", "Camp"]
+            ["Open", "Free", "Libre", "Universal", "Future"],
+            ["Content", "Knowledge", "Web", "P2P", "Freedom", "Learning", "Resource",
+              "Salad", "Wiki", "Art"],
+            ["Foundation", "Studio", "University", "Space", "Camp", "Initiative"]
           ];
           var yourname = document.getElementById("yourname");
           var name = [];
