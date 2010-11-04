@@ -1,58 +1,58 @@
-<!DOCTYPE html> 
-<html> 
-    <head profile="http://www.w3.org/2006/03/hcard"> 
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
-        <style type="text/css" media="screen">
-          body{
-            padding:0;
-            margin:50px auto;
-            text-align:center;
-            font:100% Verdana;
-          }
-          h1 {
-            font-size: 1.5em;
-          }
-          h2 {
-            font-size: 2em;
-             margin-top:0;
-          }
-          #yourname {
-            font-size: 4em;
-          }
-          footer {
-            font-size: 0.75em;
-          }
-        </style>
-        <!--[if IE]><style type="text/css">
-          .clearfix {zoom: 1; display: block;}
-        </style><![endif]--> 
-        <title>Infoobator - Generate your Open Web Foo Name</title> 
-        <meta name="robots" content="index, follow" /> 
-        <meta name="keywords" content="Open Foo" /> 
-        <meta name="description" content="Your Open Foo Name" /> 
-    </head> 
-    <body> 
-      <h1>The Infoobator</h1> 
-      <h2>Your New Open Foo Name is:</h2>
-      <p id="yourname"></p>
-      <footer>
-        <p>Brought to you by the <a href="http://opendatalabs.org">Open Data Labs</a></p>
-      </footer>
-      <script type="text/javascript" charset="utf-8">
-        (function(){
-          var words = [
-            ["Open", "Free", "Libre", "Universal", "Future"],
-            ["Content", "Knowledge", "Web", "P2P", "Freedom", "Learning", "Resource",
-              "Salad", "Wiki", "Art"],
-            ["Foundation", "Studio", "University", "Space", "Camp", "Initiative"]
-          ];
-          var yourname = document.getElementById("yourname");
-          var name = [];
-          for(var i=0;i<words.length;i+=1){
-            name.push(words[i][Math.floor(Math.random() * words[i].length)]);
-          }
-          yourname.innerHTML = name.join(" ");
-        }());
-      </script>
-    </body> 
+<!DOCTYPE html>
+<html>
+   <head profile="http://www.w3.org/2006/03/hcard">
+       <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+       <style type="text/css" media="screen">
+         body{
+           padding:0;
+           margin:50px auto;
+           text-align:center;
+           font:100% Verdana;
+         }
+         h1 {
+           font-size: 1.5em;
+         }
+         h2 {
+           font-size: 2em;
+            margin-top:0;
+         }
+         #yourname {
+           font-size: 4em;
+         }
+         footer {
+           font-size: 0.75em;
+         }
+       </style>
+       <!--[if IE]><style type="text/css">
+         .clearfix {zoom: 1; display: block;}
+       </style><![endif]-->
+       <title>Infoobator - Generate your Open Web Foo Name</title>
+       <meta name="robots" content="index, follow" />
+       <meta name="keywords" content="Open Foo" />
+       <meta name="description" content="Your Open Foo Name" />
+   </head>
+   <body>
+     <h1>The Drumbeat Infoobator</h1>
+     <h2>Your New Open Foo Name is:</h2>
+     <p id="yourname"></p>
+     <footer>
+       <p><a href="javascript:document.location.reload()">make it more open!</a><br/>Brought to you by the <a href="http://opendatalabs.org">Open Data Labs</a>. <a href="https://github.com/stefanw/Infoobator">Fork it</a> on GitHub!</p>
+     </footer>
+     <script type="text/javascript" charset="utf-8">
+       (function(){
+         var words = [
+           ["Open", "Free", "Libre", "Universal", "Future", ],
+           ["Content", "Knowledge", "Web", "P2P", "Freedom", "Liberty", "Learning", "Resource",
+             "Salad", "Wiki", "Art", "Squirrel", "Everything", "Hardware", "Media", "Music", "Science", "Standard"],
+           ["Foundation", "Studio", "University", "Space", "Camp", "Initiative", "Labs", "Library", "Festival", "Conference", "Meetup", "Project", "Group", "Philosophy"]
+         ];
+         var yourname = document.getElementById("yourname");
+         var name = [];
+         for(var i=0;i<words.length;i+=1){
+           name.push(words[i][Math.floor(Math.random() * words[i].length)]);
+         }
+         yourname.innerHTML = name.join(" ");
+       }());
+     </script>
+   </body>
 </html>
